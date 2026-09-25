@@ -1,26 +1,41 @@
-#float
-#complex number
-a = 25.5
-b = 13.27
-prod = a * b
-print(prod)
-a = 10
-b = 3
-qout = a / b
-print(qout)
-print (round(qout, 2)) # round off
-#complex: (25 - 25j) (10 - 10j) = 250 - 250j - 250j +250(-1) = -500j
-a = 25 - 25j
-b = 10 - 10j
-c = a * b
-print (c)
+#COLLECTION
+#list [ A, B, C, D]
+#Dictionary (1A,: B, C, D)
+#SET {A, B, C, D  }
+#TUPLE (A, B, C, D)
 
-import math
-a = 5
-b = 25
-c = math.remainder(b, a)
-print(c)
-c = math.factorial(a)
-print(c)
-c = math.log(a)
-print(c)
+#COLLECTION WITHIN COLLECTION
+# LIST [[ABCD], [12345]]
+# LIST MUTABLE ORDERED,DUPLICATE
+#TUPLE UNMUTABLE, UNORDERED,
+#SET MUTABLE NOT ORDERED NOT ALLOWING DUPLICATE
+
+myList = ["apple", "banana", "cherry", "dalandan"]
+myTuple = ("apple", "banana", "cherry", "dalandan")
+
+myList.append("apple")
+print(myList)
+
+myList.insert(2, "chico")
+print(myList)
+
+print (myList[0]) #start
+print (myList[4]) #dalandan
+print (myList[len(myList)-1]) #end
+
+print(myList.index("chico")) #to get index or postion no.
+print(myList.count("chico")) #to get the count of
+myList.remove("chico")
+print(myList)
+
+myStudents = [
+    ["Name","Age", "City", "Year", "Section"],
+    ["Philip Alindajao", "18", "Las Pinas ", "First", "Two"],
+    ["Philip Charles", "18", "Las Pinas ", "Second", "Two"],
+    ["Philip Charles Alindajao", "20", "Muntinlupa ", "First", "One"],
+    ["Philip Charles Duron Alindajao", "18", "Las Pinas ", "First", "Two"]
+] #List of List
+print(myStudents[0].index("Year"))
+print(myStudents[3])
+
+
